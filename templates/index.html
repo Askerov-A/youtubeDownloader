@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>Youtube Video Downloader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <style>
+    body {
+      background-color: #eee;
+    }
+    .form-container {
+      position: absolute;
+      display: block;
+      width: 350px;
+      height: 200px;
+      padding: 30px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #fff;
+      -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 2px;
+    }
+    input {
+      display: block;
+      width: 100%;
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 2px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    h1, span {
+      text-align: center;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form method="POST" action="/getvideo">
+      <h1>Youtube Downloader</h1>
+      <span>Download it all!</span>
+      <p>
+        <input type="text" placeholder="Пожалуйста, введите ссылку к видео"/>
+        <input type="submit" value="Скачать видео">
+      </p>
+    </form>
+  </div>
+</body>
+</html>
